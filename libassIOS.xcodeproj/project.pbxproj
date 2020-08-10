@@ -340,7 +340,7 @@
 		1C7C4CDE1F57ADCC005AA6B3 /* ttunpat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttunpat.h; sourceTree = "<group>"; };
 		1C7C4CDF1F57ADCC005AA6B3 /* ft2build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ft2build.h; sourceTree = "<group>"; };
 		1C7C4CE01F57ADCC005AA6B3 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
-		1CC9B7A61F54168B002EF833 /* liblibassIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibassIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC9B7A61F54168B002EF833 /* libass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libass.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC9B7A91F54168B002EF833 /* libassIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libassIOS.h; sourceTree = "<group>"; };
 		1CC9B7AA1F54168B002EF833 /* libassIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libassIOS.m; sourceTree = "<group>"; };
 		1CC9B7F31F5416FA002EF833 /* ass.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ass.c; sourceTree = "<group>"; };
@@ -603,7 +603,7 @@
 		1CC9B7A71F54168B002EF833 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CC9B7A61F54168B002EF833 /* liblibassIOS.a */,
+				1CC9B7A61F54168B002EF833 /* libass.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -926,7 +926,7 @@
 			);
 			name = libassIOS;
 			productName = libassIOS;
-			productReference = 1CC9B7A61F54168B002EF833 /* liblibassIOS.a */;
+			productReference = 1CC9B7A61F54168B002EF833 /* libass.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -950,6 +950,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1CC9B79D1F54168B002EF833;
@@ -1053,7 +1054,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1095,7 +1096,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1127,7 +1128,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DCONFIG_CORETEXT";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ass;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1157,7 +1158,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DCONFIG_CORETEXT";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ass;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
